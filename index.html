@@ -5,10 +5,10 @@
     <title>Kimberly's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Playfair Display', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fffaf0;
+            background-color: #f0f9f0;
             color: #333;
         }
 
@@ -19,19 +19,19 @@
         }
 
         h1 {
-            color: #ff69b4;
+            color: #2e7d32;
             font-size: 2.5em;
         }
 
         p.subtitle {
             font-size: 1.2em;
-            color: #555;
+            color: #4b6b4b;
             margin-top: 0;
         }
 
         h2 {
-            color: #4caf50;
-            border-bottom: 2px solid #4caf50;
+            color: #388e3c;
+            border-bottom: 2px solid #388e3c;
             padding-bottom: 5px;
             margin-top: 40px;
         }
@@ -42,14 +42,20 @@
         }
 
         ul.projects li {
-            background-color: #ffe4e1;
+            background-color: #d0f0c0;
             margin: 10px 0;
             padding: 15px 20px;
             border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        ul.projects li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         a {
-            color: #ff69b4;
+            color: #2e7d32;
             text-decoration: none;
             font-weight: bold;
         }
@@ -66,14 +72,14 @@
         }
 
         .skill {
-            background-color: #e0ffff;
+            background-color: #c8e6c9;
             padding: 5px 10px;
             border-radius: 12px;
             font-size: 0.9em;
         }
 
         .contact a {
-            color: #ff69b4;
+            color: #2e7d32;
             text-decoration: none;
         }
 
@@ -85,19 +91,19 @@
 <body>
     <div class="container">
         <h1>Hi, I'm Kimberly</h1>
-        <p class="subtitle">Aspiring IT specialist | Web developer | Tech enthusiast</p>
+        <p class="subtitle">Aspiring IT Specialist | Web Developer | Tech Enthusiast</p>
 
         <h2>Projects</h2>
         <ul class="projects">
             <li>
                 <strong>Personal Portfolio Website</strong> – HTML, CSS, GitHub Pages  
-                <a href="https://kimberlykj.github.io/portfolio/" target="_blank">View Project</a>  
                 Created a personal portfolio to showcase my projects, skills, and IT experience. Continuously improving the design and layout.
+                <a href="https://kimberlykj.github.io/portfolio/" target="_blank">View Project</a>  
             </li>
             <li>
                 <strong>FitFix – Wardrobe App Design</strong> – Figma, Google Docs  
-                <a href="https://www.figma.com/proto/WXAXb2mFhCX7GIA7FzmIgX/fitfix?node-id=19-26&starting-point-node-id=19%3A26&t=nVbm4LjhrrFdVhNa-1" target="_blank">View Prototype</a>  
                 Collaborated in a 7-person team to develop a wardrobe app, contributing to wireframe planning, user flow design, and prototype review.
+                <a href="https://www.figma.com/proto/WXAXb2mFhCX7GIA7FzmIgX/fitfix?node-id=19-26&starting-point-node-id=19%3A26&t=nVbm4LjhrrFdVhNa-1" target="_blank">View Prototype</a>  
             </li>
             <li>
                 <strong>Password Security Analysis Lab</strong> – John the Ripper, Command Line  
@@ -120,7 +126,7 @@
             <span class="skill">Java</span>
             <span class="skill">Canva</span>
             <span class="skill">Microsoft Office</span>
-            <span class="skill">Google (Docs, Sheets, Slides)</span>
+            <span class="skill">Google Docs/Sheets/Slides</span>
         </div>
 
         <h2>Contact</h2>
