@@ -2,38 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Kimberly's Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: #4CAF50; }
-        a { color: #0066cc; text-decoration: none; }
+        /* General styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+
+        /* Container to center content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header styling */
+        h1 {
+            color: #ff6f91; /* soft pink */
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 0;
+        }
+
+        /* Section titles */
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        /* Project list */
+        ul.projects {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.projects li {
+            background-color: #f7f7f7;
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        ul.projects li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        a {
+            color: #ff6f91;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #e0f7e9;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        /* Contact */
+        .contact a {
+            color: #ff6f91;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Hi, I'm Kimberly</h1>
+        <p class="subtitle">Aspiring IT specialist | Web developer | Tech enthusiast</p>
 
-    <h1>Hi, I'm [Kimberly]</h1>
-    <p>Aspiring IT rofessional | Web developer | Tech enthusiast</p>
+        <h2>Projects</h2>
+        <ul class="projects">
+            <li>
+                <strong>Wardrobe App Design</strong> – Collaborative Figma project for organizing outfits. 
+                <a href="https://www.figma.com/proto/WXAXb2mFhCX7GIA7FzmIgX/fitfix?node-id=19-26&starting-point-node-id=19%3A26&t=nVbm4LjhrrFdVhNa-1" target="_blank">View Prototype</a>
+            </li>
+            <li>
+                <strong>Password Security Lab</strong> – Tested password strength using John the Ripper.
+            </li>
+        </ul>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            Tamagotchi App – A virtual pet game using HTML, CSS, and JavaScript. 
-            <a href="#">Live Demo</a>
-        </li>
-        <li>
-            Wardrobe App Design – Collaborative Figma project for organizing outfits. 
-            <a href="https://www.figma.com/proto/WXAXb2mFhCX7GIA7FzmIgX/fitfix?node-id=19-26&starting-point-node-id=19%3A26&t=nVbm4LjhrrFdVhNa-1">View Prototype</a>
-        </li>
-        <li>
-            Password Security Lab – Tested password strength using John the Ripper. 
-        </li>
-    </ul>
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Windows Server</span>
+            <span class="skill">Networking</span>
+            <span class="skill">Cybersecurity Labs</span>
+        </div>
 
-    <h2>Skills</h2>
-    <p>HTML, CSS, JavaScript, Windows Server, Networking, Cybersecurity Labs</p>
-
-    <h2>Contact</h2>
-    <p>Email: jiankimberly@gmail.com</p>
-
+        <h2>Contact</h2>
+        <p class="contact">Email: <a href="mailto:jiankimberly@gmail.com">jiankimberly@gmail.com</a></p>
+        <p class="contact">Portfolio: <a href="https://kimberlykj.github.io/portfolio/" target="_blank">kimberlykj.github.io/portfolio</a></p>
+    </div>
 </body>
 </html>
