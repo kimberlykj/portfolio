@@ -4,98 +4,106 @@
     <meta charset="UTF-8">
     <title>Kimberly's Portfolio</title>
     <style>
-        /* General styling */
+        /* ---------------- GENERAL STYLING ---------------- */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fdfdfd;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* sets readable, modern font */
+            margin: 0; /* remove default margin */
+            padding: 0; /* remove default padding */
+            background: linear-gradient(120deg, #fef9f9, #fffdf7); /* soft pastel gradient background */
+            color: #333; /* default text color */
         }
 
-        /* Container to center content */
+        /* ---------------- CONTAINER ---------------- */
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            max-width: 900px; /* keeps content from stretching too wide */
+            margin: 0 auto; /* centers the container horizontally */
+            padding: 40px 20px; /* space inside container */
         }
 
-        /* Header styling */
+        /* ---------------- HEADER ---------------- */
         h1 {
-            color: #ff6f91; /* soft pink */
-            font-size: 2.5em;
-            margin-bottom: 5px;
+            color: #ff6f91; /* soft pink color for fun but professional */
+            font-size: 2.8em; /* big main title */
+            margin-bottom: 5px; /* space below title */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* subtle shadow for depth */
         }
 
         p.subtitle {
-            font-size: 1.2em;
-            color: #555;
-            margin-top: 0;
+            font-size: 1.2em; /* slightly bigger than normal text */
+            color: #555; /* softer gray for subtitle */
+            margin-top: 0; /* remove extra top spacing */
         }
 
-        /* Section titles */
+        /* ---------------- SECTION TITLES ---------------- */
         h2 {
-            color: #4CAF50;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-            margin-top: 40px;
+            color: #4CAF50; /* green section headers */
+            border-bottom: 2px solid #4CAF50; /* underline effect */
+            padding-bottom: 5px; /* space between text and underline */
+            margin-top: 40px; /* space above each section */
         }
 
-        /* Project list */
+        /* ---------------- PROJECT LIST ---------------- */
         ul.projects {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: none; /* remove bullets */
+            padding: 0; /* remove default padding */
         }
 
         ul.projects li {
-            background-color: #f7f7f7;
-            margin: 10px 0;
-            padding: 15px 20px;
-            border-radius: 10px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            background: #fff0f5; /* soft pink card background */
+            margin: 12px 0; /* space between projects */
+            padding: 20px; /* internal padding */
+            border-radius: 15px; /* rounded corners */
+            transition: transform 0.2s, box-shadow 0.2s; /* smooth hover effect */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* subtle shadow for card depth */
         }
 
         ul.projects li:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transform: translateY(-4px); /* moves card slightly up on hover */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* shadow becomes stronger on hover */
         }
 
         a {
-            color: #ff6f91;
-            text-decoration: none;
-            font-weight: bold;
+            color: #ff6f91; /* link color */
+            text-decoration: none; /* remove underline */
+            font-weight: bold; /* make it stand out */
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* underline on hover for interactivity */
         }
 
-        /* Skills */
+        /* ---------------- SKILLS ---------------- */
         .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            display: flex; /* line up skills horizontally */
+            flex-wrap: wrap; /* wrap to next line if too long */
+            gap: 10px; /* space between each skill */
         }
 
         .skill {
-            background-color: #e0f7e9;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.9em;
+            background-color: #ffe0f0; /* pastel pink badges */
+            padding: 6px 14px; /* internal spacing */
+            border-radius: 20px; /* rounded pill shape */
+            font-size: 0.95em; /* slightly smaller text */
         }
 
-        /* Contact */
+        /* ---------------- CONTACT ---------------- */
         .contact a {
-            color: #ff6f91;
-            text-decoration: none;
+            color: #ff6f91; /* pink links */
+            text-decoration: none; /* remove underline */
+        }
+
+        .contact a:hover {
+            text-decoration: underline; /* underline on hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <h1>Hi, I'm Kimberly</h1>
         <p class="subtitle">Aspiring IT specialist | Web developer | Tech enthusiast</p>
 
+        <!-- Projects Section -->
         <h2>Projects</h2>
         <ul class="projects">
             <li>
@@ -107,6 +115,7 @@
             </li>
         </ul>
 
+        <!-- Skills Section -->
         <h2>Skills</h2>
         <div class="skills">
             <span class="skill">HTML</span>
@@ -117,9 +126,9 @@
             <span class="skill">Cybersecurity Labs</span>
         </div>
 
+        <!-- Contact Section -->
         <h2>Contact</h2>
         <p class="contact">Email: <a href="mailto:jiankimberly@gmail.com">jiankimberly@gmail.com</a></p>
-        <p class="contact">Portfolio: <a href="https://kimberlykj.github.io/portfolio/" target="_blank">kimberlykj.github.io/portfolio</a></p>
     </div>
 </body>
 </html>
