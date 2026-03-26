@@ -3,86 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Kimberly's Portfolio</title>
-
     <style>
-        /* Body */
         body {
-            font-family: Arial, sans-serif; /* sets a readable font */
-            margin: 0; /* remove default space around page */
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 0;
-            background-color: #fffaf0; /* soft cream background */
-            color: #333; /* text color */
+            background-color: #fffaf0;
+            color: #333;
         }
 
-        /* Container */
         .container {
-            max-width: 800px; /* keeps content from stretching too wide */
-            margin: 0 auto; /* center the container */
+            max-width: 900px;
+            margin: 0 auto;
             padding: 40px 20px;
         }
 
-        /* Header */
         h1 {
-            color: #ff69b4; /* soft pink for a cute look :d */
+            color: #ff69b4;
             font-size: 2.5em;
-            margin-bottom: 5px;
         }
 
         p.subtitle {
-            color: #555; /* soft gray for subtitle */
             font-size: 1.2em;
+            color: #555;
             margin-top: 0;
         }
 
-        /* Section Titles */
         h2 {
-            color: #4caf50; /* green headers for sections */
+            color: #4caf50;
             border-bottom: 2px solid #4caf50;
             padding-bottom: 5px;
             margin-top: 40px;
         }
 
-        /* Project Lists */
         ul.projects {
-            list-style-type: none; /* remove bullets */
+            list-style-type: none;
             padding: 0;
         }
 
         ul.projects li {
-            background-color: #ffe4e1; /* light pink project box */
-            margin: 10px 0; /* space between items */
-            padding: 15px 20px; /* space inside the box */
-            border-radius: 10px; /* rounded corners */
+            background-color: #ffe4e1;
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 10px;
         }
 
         a {
-            color: #ff69b4; /* pink links */
-            text-decoration: none; /* remove underline */
+            color: #ff69b4;
+            text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline; /* underline on hover */
+            text-decoration: underline;
         }
 
-        /* Skills */
         .skills {
-            display: flex; /* line up skills horizontally */
-            flex-wrap: wrap; /* wrap if too many */
-            gap: 10px; /* space between skill boxes */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-top: 10px;
         }
 
         .skill {
-            background-color: #e0ffff; /* light blue skill boxes */
+            background-color: #e0ffff;
             padding: 5px 10px;
-            border-radius: 12px; /* pill shape */
+            border-radius: 12px;
             font-size: 0.9em;
         }
 
-        /* Contact */
         .contact a {
-            color: #ff69b4; /* pink links */
+            color: #ff69b4;
             text-decoration: none;
         }
 
@@ -91,37 +82,47 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <!-- HEADER -->
         <h1>Hi, I'm Kimberly</h1>
         <p class="subtitle">Aspiring IT specialist | Web developer | Tech enthusiast</p>
 
-        <!-- PROJECTS SECTION -->
         <h2>Projects</h2>
         <ul class="projects">
             <li>
-                <strong>Wardrobe App Design</strong> – Collaborative Figma project for organizing outfits.
-                <a href="https://www.figma.com/proto/WXAXb2mFhCX7GIA7FzmIgX/fitfix?node-id=19-26&starting-point-node-id=19%3A26&t=nVbm4LjhrrFdVhNa-1" target="_blank">View Prototype</a>
+                <strong>Personal Portfolio Website</strong> – HTML, CSS, GitHub Pages  
+                <a href="https://kimberlykj.github.io/portfolio/" target="_blank">View Project</a>  
+                Created a personal portfolio to showcase my projects, skills, and IT experience. Continuously improving the design and layout.
             </li>
             <li>
-                <strong>Password Security Lab</strong> – Tested password strength using John the Ripper.
+                <strong>FitFix – Wardrobe App Design</strong> – Figma, Google Docs  
+                <a href="https://www.figma.com/proto/WXAXb2mFhCX7GIA7FzmIgX/fitfix?node-id=19-26&starting-point-node-id=19%3A26&t=nVbm4LjhrrFdVhNa-1" target="_blank">View Prototype</a>  
+                Collaborated in a 7-person team to develop a wardrobe app, contributing to wireframe planning, user flow design, and prototype review.
+            </li>
+            <li>
+                <strong>Password Security Analysis Lab</strong> – John the Ripper, Command Line  
+                Conducted password security testing, analyzing password strength and vulnerabilities.
+            </li>
+            <li>
+                <strong>Virtual Lab – Windows Server & Client Setup</strong> – VMware, Windows Server, Windows 11, PowerShell/Command Prompt  
+                Built and configured a virtual network environment with server and client machines, implementing networking and connectivity tests.
+            </li>
+            <li>
+                <strong>Network Testing (Ping + Setup)</strong> – Ping, Nmap, Wireshark  
+                Performed beginner network analysis by configuring machines, testing connectivity via ping, and analyzing traffic.
             </li>
         </ul>
 
-        <!-- SKILLS SECTION -->
         <h2>Skills</h2>
         <div class="skills">
             <span class="skill">HTML</span>
             <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Windows Server</span>
-            <span class="skill">Networking</span>
-            <span class="skill">Cybersecurity Labs</span>
+            <span class="skill">Java</span>
+            <span class="skill">Canva</span>
+            <span class="skill">Microsoft Office</span>
+            <span class="skill">Google (Docs, Sheets, Slides)</span>
         </div>
 
-        <!-- CONTACT SECTION -->
         <h2>Contact</h2>
         <p class="contact">Email: <a href="mailto:jiankimberly@gmail.com">jiankimberly@gmail.com</a></p>
     </div>
