@@ -3,111 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Kimberly's Portfolio</title>
+
     <style>
-        /* ---------------- GENERAL STYLING ---------------- */
+        /* Body */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* sets readable, modern font */
-            margin: 0; /* remove default margin */
-            padding: 0; /* remove default padding */
-            background: linear-gradient(120deg, #fef9f9, #fffdf7); /* soft pastel gradient background */
-            color: #333; /* default text color */
+            font-family: Arial, sans-serif; /* sets a readable font */
+            margin: 0; /* remove default space around page */
+            padding: 0;
+            background-color: #fffaf0; /* soft cream background */
+            color: #333; /* text color */
         }
 
-        /* ---------------- CONTAINER ---------------- */
+        /* Container */
         .container {
-            max-width: 900px; /* keeps content from stretching too wide */
-            margin: 0 auto; /* centers the container horizontally */
-            padding: 40px 20px; /* space inside container */
+            max-width: 800px; /* keeps content from stretching too wide */
+            margin: 0 auto; /* center the container */
+            padding: 40px 20px;
         }
 
-        /* ---------------- HEADER ---------------- */
+        /* Header */
         h1 {
-            color: #ff6f91; /* soft pink color for fun but professional */
-            font-size: 2.8em; /* big main title */
-            margin-bottom: 5px; /* space below title */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* subtle shadow for depth */
+            color: #ff69b4; /* soft pink for a cute look :d */
+            font-size: 2.5em;
+            margin-bottom: 5px;
         }
 
         p.subtitle {
-            font-size: 1.2em; /* slightly bigger than normal text */
-            color: #555; /* softer gray for subtitle */
-            margin-top: 0; /* remove extra top spacing */
+            color: #555; /* soft gray for subtitle */
+            font-size: 1.2em;
+            margin-top: 0;
         }
 
-        /* ---------------- SECTION TITLES ---------------- */
+        /* Section Titles */
         h2 {
-            color: #4CAF50; /* green section headers */
-            border-bottom: 2px solid #4CAF50; /* underline effect */
-            padding-bottom: 5px; /* space between text and underline */
-            margin-top: 40px; /* space above each section */
+            color: #4caf50; /* green headers for sections */
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 5px;
+            margin-top: 40px;
         }
 
-        /* ---------------- PROJECT LIST ---------------- */
+        /* Project Lists */
         ul.projects {
             list-style-type: none; /* remove bullets */
-            padding: 0; /* remove default padding */
+            padding: 0;
         }
 
         ul.projects li {
-            background: #fff0f5; /* soft pink card background */
-            margin: 12px 0; /* space between projects */
-            padding: 20px; /* internal padding */
-            border-radius: 15px; /* rounded corners */
-            transition: transform 0.2s, box-shadow 0.2s; /* smooth hover effect */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* subtle shadow for card depth */
-        }
-
-        ul.projects li:hover {
-            transform: translateY(-4px); /* moves card slightly up on hover */
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* shadow becomes stronger on hover */
+            background-color: #ffe4e1; /* light pink project box */
+            margin: 10px 0; /* space between items */
+            padding: 15px 20px; /* space inside the box */
+            border-radius: 10px; /* rounded corners */
         }
 
         a {
-            color: #ff6f91; /* link color */
+            color: #ff69b4; /* pink links */
             text-decoration: none; /* remove underline */
-            font-weight: bold; /* make it stand out */
+            font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline; /* underline on hover for interactivity */
+            text-decoration: underline; /* underline on hover */
         }
 
-        /* ---------------- SKILLS ---------------- */
+        /* Skills */
         .skills {
             display: flex; /* line up skills horizontally */
-            flex-wrap: wrap; /* wrap to next line if too long */
-            gap: 10px; /* space between each skill */
+            flex-wrap: wrap; /* wrap if too many */
+            gap: 10px; /* space between skill boxes */
+            margin-top: 10px;
         }
 
         .skill {
-            background-color: #ffe0f0; /* pastel pink badges */
-            padding: 6px 14px; /* internal spacing */
-            border-radius: 20px; /* rounded pill shape */
-            font-size: 0.95em; /* slightly smaller text */
+            background-color: #e0ffff; /* light blue skill boxes */
+            padding: 5px 10px;
+            border-radius: 12px; /* pill shape */
+            font-size: 0.9em;
         }
 
-        /* ---------------- CONTACT ---------------- */
+        /* Contact */
         .contact a {
-            color: #ff6f91; /* pink links */
-            text-decoration: none; /* remove underline */
+            color: #ff69b4; /* pink links */
+            text-decoration: none;
         }
 
         .contact a:hover {
-            text-decoration: underline; /* underline on hover */
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- HEADER -->
         <h1>Hi, I'm Kimberly</h1>
         <p class="subtitle">Aspiring IT specialist | Web developer | Tech enthusiast</p>
 
-        <!-- Projects Section -->
+        <!-- PROJECTS SECTION -->
         <h2>Projects</h2>
         <ul class="projects">
             <li>
-                <strong>Wardrobe App Design</strong> – Collaborative Figma project for organizing outfits. 
+                <strong>Wardrobe App Design</strong> – Collaborative Figma project for organizing outfits.
                 <a href="https://www.figma.com/proto/WXAXb2mFhCX7GIA7FzmIgX/fitfix?node-id=19-26&starting-point-node-id=19%3A26&t=nVbm4LjhrrFdVhNa-1" target="_blank">View Prototype</a>
             </li>
             <li>
@@ -115,7 +110,7 @@
             </li>
         </ul>
 
-        <!-- Skills Section -->
+        <!-- SKILLS SECTION -->
         <h2>Skills</h2>
         <div class="skills">
             <span class="skill">HTML</span>
@@ -126,7 +121,7 @@
             <span class="skill">Cybersecurity Labs</span>
         </div>
 
-        <!-- Contact Section -->
+        <!-- CONTACT SECTION -->
         <h2>Contact</h2>
         <p class="contact">Email: <a href="mailto:jiankimberly@gmail.com">jiankimberly@gmail.com</a></p>
     </div>
